@@ -1,0 +1,687 @@
+/* Body */
+
+body {
+    background-color: #fefefe;
+    color: #333;
+    line-height: 2;
+
+    
+}
+
+/* Header */
+
+header .logo-container {
+    background-color: black;
+    color: rgb(245, 243, 248);
+    display: grid;
+    grid-template-columns: 0.40fr 0.60fr ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    
+}
+header h1{
+    font-family: "Robaga" ,wavy ;
+    font-size: 40px;
+}
+
+/* -----nav------ */
+nav{
+    background-color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-inline: 40px;
+
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #CE70BA;
+}
+
+.logo-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+nav .login {
+    background-color: #5dc1b9;
+    color: black;
+    font-size: medium;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+/* -----section --------*/
+section .section-container{
+    display: grid;
+    grid-template-columns: 0.70fr 0.30fr ;
+    justify-content: space-between;
+    align-items: center;
+    padding:  50px;
+
+}
+.section-container p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    font-family: 'Cursive', sans-serif;
+}
+
+.hero img{
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+
+
+.head-label{
+    height: 70px;
+    background-color: #000;
+    border-radius: 10px;
+    
+    
+}
+.head-label h1{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/* ******coursess******* */
+
+.courses {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.courses h2 {
+    font-size: 50px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+
+.course-category {
+    margin-bottom: 40px;
+}
+
+.course-cont h3 {
+    font-size: 30px;
+    color: #2980b9;
+}
+
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.course {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image fills the area while maintaining proportions */
+    display: block;
+}
+
+.course p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.course .stars {
+    font-size: 1em;
+    color: #f39c12; /* Star color */
+    margin-bottom: 10px;
+}
+
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.course-cont{
+    display: flex;
+    align-items: center;
+}
+.rounded-image{
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+/*events*/
+
+.events {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.events h2 {
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 10px;
+}
+
+.event img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Icons */
+.event-details i {
+    color: #2980b9;
+    margin-right: 5px;
+}
+
+
+
+
+/* _________Features______ */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fefefe;
+}
+
+.feature img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* _______certificat________*/
+.certificate {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.certificate h2 {
+    font-size: 30px;
+    color: #2c3e50;
+}
+
+.certificate p {
+    font-size: 26px;
+    color: #555;
+    margin-bottom: 40px;
+}
+.prof-certif{
+    display: flex;
+    align-items: center;
+}
+.prof-certif img{
+    height:170px;
+    width: 170px;
+    margin :10px;
+}
+
+.certificate-item{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.certificate-item img{
+    width: 40%;
+}
+
+.certificate-items{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+
+
+}
+.certificate-items img{
+    margin-left: 100px;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+}
+.right-side h2 {
+    width: 450px;
+}
+/* revolution container */
+.container p{
+    font-size: 30px;
+
+
+}
+
+.container-quality{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px 200px 50px 200px ;
+}
+.quality-card{
+    display: grid;
+    color: #f1f1f1;
+    background: linear-gradient(0.25turn, #3f87a6, #f69d3c);
+    border-radius: 10px;
+    height: 250px;
+    font-size: 60px;
+    font-weight:bolder ;
+    
+}
+
+
+#card{
+    font-size: 30px   ;
+
+}
+
+
+
+
+
+/* _______Login/Register _____ */
+#login-register {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#login-register form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-register form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#login-register form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-register form button {
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#login-register .register-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* ______Contact______*/
+
+.contact {
+    background-color: #ffebec;
+    border-radius: 10px;
+
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.contact form input, .contact form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact .info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact .info div {
+    margin: 5px 0;
+}
+.contact img{
+    width: 50px;
+    margin-bottom: 10px;
+    
+}
+
+.contact.nav{
+    background-color: black;
+
+}
+.form-section{
+    display: grid;
+    padding: 50px;  
+    background-color: WHITE;
+    border-radius: 10px;
+}
+.top-section{
+    text-align: center;
+}
+.container-location{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px 20px 0;
+}
+.container-location img{
+    margin-right: 10px;
+}
+.field{
+    display: grid;
+}
+.input-style{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* _______Pricing ____ */
+.pricing {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.pricing .pricing-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.pricing .tier {
+    background-color: #ffcccc;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:white;
+}
+
+.pricing h2 {
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* ------Table --------- */
+
+
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: CE70BA;
+    color: white;
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+td.feature {
+    font-weight: bold;
+    background: #ecf0f1;
+}
+
+thead tr {
+    background: #CE70BA;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+td:contains("✅") {
+    color: green;
+    font-size: 20px;
+}
+
+td:contains("❌") {
+    color: red;
+    font-size: 20px;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+p{
+    margin-top: 20px;
+}
+
+
+
+/* -------Media Queries ---- */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .course img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .course p {
+        font-size: 14px;
+    }
+
+    .stars {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px 10px 20px;
+    color: #ddd;
+    font-size: larger;
+    font-size: 32px;
+}
+
+
+/* ---font face---- */
+
+@font-face {
+    font-family: "Robaga";
+    src: url("Robaga\ Rounded\ Bold-Italic.otf");
+}
